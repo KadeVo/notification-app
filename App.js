@@ -3,14 +3,14 @@ import { StyleSheet, Text, View } from 'react-native'
 import * as Notifications from 'expo-notifications'
 
 export default function App() {
-  useEffect(() => {
-    ;(async () => {
-      const { status } = await Notifications.requestPermissionsAsync()
-      if (status !== 'granted') {
-        alert('Notification permissions are required!')
-      }
-    })()
-  }, [])
+  // useEffect(() => {
+  //   ;(async () => {
+  //     const { status } = await Notifications.requestPermissionsAsync()
+  //     if (status !== 'granted') {
+  //       alert('Notification permissions are required!')
+  //     }
+  //   })()
+  // }, [])
 
   return (
     <View style={styles.container}>
